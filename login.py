@@ -6,7 +6,8 @@ from mastodon import Mastodon
 
 basepath = os.path.dirname(os.path.abspath(__file__))
 settings = toml.load(os.path.join(basepath,'settings.toml'))
-mastodon_password = os.os.environ['MASTODON_PASSWORD']
+mastodon_password = os.environ['MASTODON_PASSWORD']
+
 
 mastodon = Mastodon(
     client_id = os.path.join(basepath,'pytooter_clientcred.secret'),

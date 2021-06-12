@@ -5,7 +5,7 @@ import toml
 from mastodon import Mastodon
 
 basepath = os.path.dirname(os.path.abspath(__file__))
-settings = toml.load(os.path.join(basepath,'settings.toml')
+settings = toml.load(os.path.join(basepath,'settings.toml'))
 
 Mastodon.create_app(
      'pytooterapp',
